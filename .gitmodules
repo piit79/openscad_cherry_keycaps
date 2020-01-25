@@ -1,0 +1,4 @@
+[submodule "cherry-mx-keycaps"]
+	path = cherry-mx-keycaps
+	url = https://github.com/ConstantinoSchillebeeckx/cherry-mx-keycaps.git
+	branch = thick-wall
