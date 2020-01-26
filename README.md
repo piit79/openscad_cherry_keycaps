@@ -14,13 +14,13 @@ First, clone this repository into your OpenSCAD project (including submodule):
 git clone --recursive https://github.com/piit79/openscad_cherry_keycaps.git
 ```
 
-If you're tracking your project in Git, the better approach is to
-add this repository as a submodule:
+If you're tracking your project in Git, it's probably best to add this repository as a submodule:
 ```
 git submodule add https://github.com/piit79/openscad_cherry_keycaps.git
+git submodule update --init --recursive
 ```
 
-Then, simply use the module in your project and start using it:
+Then, simply include the module in your project with the `use` keyword:
 ```
 use <openscad_cherry_keycaps/cherry_keycaps.scad>;
 
@@ -28,7 +28,8 @@ for (row = [1:4])
   translate([0, 9.5 + (2 - row) * 19, 0])
     cherry_1u(row);
 ```
+Note the usage of `use` instead of `include` to avoid evaluating example code present in the module.
 
-This is what you should get:
+You should get something like this:
 
 ![OpenSCAD Demo](https://github.com/piit79/openscad_cherry_keycaps/raw/master/images/openscad-demo.png)
