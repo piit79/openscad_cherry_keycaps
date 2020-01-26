@@ -22,5 +22,11 @@ Then, simply use the module in your project and start using it:
 ```
 use <openscad_cherry_keycaps/cherry_keycaps.scad>;
 
-cherry1u(1);
+for (row = [1:4])
+  translate([0, 9.5 + (2 - row) * 19, 0])
+    cherry_1u(row);
 ```
+
+This is what you should get:
+
+![OpenSCAD Demo](https://github.com/piit79/openscad_cherry_keycaps/raw/master/images/openscad-demo.png)

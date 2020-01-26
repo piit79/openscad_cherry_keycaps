@@ -6,7 +6,7 @@ module cherry(row, width) {
     import(str("cherry-mx-keycaps/STL/1x", width, " R", row, ".stl"));
 }
 
-module cherry_1u(row, colour=undef) {
+module cherry_1u(row, colour=undef, center=false) {
   color(colour)
     translate([-235, -(4 - row)*25, 0])
       cherry(5 - row, 1);
@@ -59,3 +59,9 @@ module cherry_6_25u(row, colour=undef) {
 module cherry_6_25u_space(colour=undef) {
   cherry_6_25u(4, colour);
 }
+
+
+// Example usage
+for (row = [1:4])
+  translate([0, 9.5 + (2 - row) * 19, 0])
+    cherry_1u(row);
