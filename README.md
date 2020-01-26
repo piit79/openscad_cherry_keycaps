@@ -3,6 +3,8 @@ This repository contains [OpenSCAD](https://www.openscad.org/) module that provi
 Cherry profile keycaps in R1 to R4 profile and sizes 1u, 1.25u, 1.5u, 1.75u,
 2u, 2.25u, 2.75u and 6.25u.
 
+All keycaps are currently centered (similar to specifying `center=true` on OpenSCAD primitives). The standard "bottom left corner at origin" positioning might be added later.
+
 The actual models are taken from the [ConstantinoSchillebeeckx/cherry-mx-keycaps](https://github.com/ConstantinoSchillebeeckx/cherry-mx-keycaps/tree/thick-wall)
 repository. All credit for the models goes to the original author.
 
